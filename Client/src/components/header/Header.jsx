@@ -5,9 +5,9 @@ export default function Header() {
         <header>
             <h1><Link className="home" to="/">Best Hotels</Link></h1>
             <nav>
-                <Link to="/games">Catalog</Link>
+                <Link to="/hotels">Catalog</Link>
                 <div id="user">
-                    <Link to="/games/create">New hotel</Link>
+                    <Link to="/hotels/create">New hotel</Link>
                     <Link to="/logout">Logout</Link>
                 </div>
                 <div id="guest">

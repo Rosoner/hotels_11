@@ -1,5 +1,6 @@
 body {
-    background-image: url('../images/bg-fixed-3.jpg');
+    /* background-image: url('../images/hotel_3.png'); */
+    background-color: darkgray;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
