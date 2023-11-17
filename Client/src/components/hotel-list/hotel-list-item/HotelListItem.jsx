@@ -17,9 +17,9 @@ export default function HotelListItem({
                 <h6>Location: {location}</h6>
                 <h2>Hotel: {name}</h2>
                 <div>
-                    <p>Summary:{summary}</p>
-                    <p>{description}</p>
-                    <p>Facilities:{facilities}</p>
+                    <p>Info: {summary}</p>
+                    {/* <p>{description}</p>
+                    <p>Facilities:{facilities}</p> */}
                 </div>
                 <Link to={`/hotels/${_id}`} className="details-button">Details</Link>
             </div>
