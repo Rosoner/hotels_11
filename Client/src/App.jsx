@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+// import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import * as authService from './services/authService';
-import AuthContext from './contexts/authContext';
+// import * as authService from './services/authService';
+import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
 import Home from "./components/home/Home"
@@ -19,14 +19,14 @@ import Register from './components/register/Register';
 // import ControlledCarousel from './components/carosel/carocel.jsx';
 function App() { 
 
-const navigate = useNavigate();
-    const [auth, setAuth] = useState(() => {
-        localStorage.removeItem('accessToken');
-        // in case of browse refresh token will be deleted from react, but is still keep it in localStorage
-        // due to reset in localStorage with removeItem
+// const navigate = useNavigate();
+//     const [auth, setAuth] = useState(() => {
+//         localStorage.removeItem('accessToken');
+//         // in case of browse refresh token will be deleted from react, but is still keep it in localStorage
+//         // due to reset in localStorage with removeItem
 
-        return {};
-    });
+//         return {};
+//     });
     // Store authority data.. console.log(result)
         // accessToken:"16a52761a9d32c61e8b166a0738520017872a536be786d618dd28dff4ad2fd4d"
         // email: "ivan@abv.bg"
@@ -35,46 +35,8 @@ const navigate = useNavigate();
         // _id: "8606ea79-d5a4-4326-b731-1566d43e85b3"
 
 
-    const loginSubmitHandler = async (values) => {
-        const result = await authService.login(values.email, values.password);
-
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        navigate(Path.Home);
-
-        console.log(result);
-    };
-
-    const registerSubmitHandler = async (values) => {
-        const result = await authService.register( values.username, values.email, values.password);
-
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        navigate(Path.Home);
-    };
-
-    const logoutHandler = () => {
-        setAuth({});
-
-        localStorage.removeItem('accessToken');
-        
-    };
-
-    const values = {
-        loginSubmitHandler,
-        registerSubmitHandler,
-        logoutHandler,
-        username: auth.username || auth.email,
-        email: auth.email,
-        isAuthenticated: !!auth.accessToken,
-    };
-
   return (
-    <AuthContext.Provider value={values}>
+    <AuthProvider>
         <div id="box">
             <Header />
 
@@ -89,7 +51,7 @@ const navigate = useNavigate();
             </Routes>
         </div>
         <Footer />
-    </AuthContext.Provider>
+    </AuthProvider >
 )
 }
 

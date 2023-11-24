@@ -4,8 +4,9 @@ import AuthContext from '../../contexts/authContext';
 
 export default function Header() {
     const {
-        isAuthenticated,
         username,
+        isAuthenticated,
+        
     } = useContext(AuthContext);
 
     return (
