@@ -41,11 +41,11 @@ export default function HotelDetails() {
                     <h6>{hotel.location}</h6>
                                     
                     <p className="type">{hotel.description}</p>
-                    <span className="levels">Facilities: {hotel.facilities}</span>
-                    <span >
+                    <div className="levels">Facilities: {hotel.facilities}</div>
+                    <div >
                     <Link to={hotel.link} className="details-button">hotel</Link>
                     {/* <Link to={`/hotels/${_id}`} className="details-button">Details</Link */}
-                    </span>                    
+                    </div>                    
                 </div>
 
                 {/* <div className="details-comments">

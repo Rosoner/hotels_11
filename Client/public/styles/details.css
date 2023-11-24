@@ -49,18 +49,21 @@
 
 .levels {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 15px ;
+    margin-left: 15px ;
+    margin-right: auto ;
+    margin-bottom: 60px ;
     color: #555;
     padding: 7px;
     border-radius: 5px;
-    background-color: #b4b6ee;
-    border: 1px solid rgba(218, 181, 181, 0.829);
+    background-color: #dadaeb;
+    border: 1px solid rgb(165 140 140 / 83%);
 }
 
 .type {
-    display: inline-block;
-    color: #959595;
-    font-size: 19px;
+    display: flex;
+    color: #757474;
+    font-size: 16px;
     margin-left: 10px;
 }
 

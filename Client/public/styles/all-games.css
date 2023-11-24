@@ -1,11 +1,13 @@
 #catalog-page {
-    background-color: transparent;
+    background-color:  #657a8f;
     box-shadow: 0px 0px 40px 0px;
     overflow: hidden;
     border-radius: 10px;
     padding: 20px;
     height: auto;
     width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #catalog-page>h1 {
@@ -50,7 +52,7 @@
 }
 
 .allGames-info>h6 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 750;
     color: #161618;
 }
@@ -58,7 +60,7 @@
 .allGames-info>h2 {
     font-size: 20px;
     font-weight: 750;
-    color: #161618;
+    color: #9f3232;
 }
 
 .details-button {

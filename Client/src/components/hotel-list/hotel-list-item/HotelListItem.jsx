@@ -14,10 +14,10 @@ export default function HotelListItem({
         <div className="allGames">
             <div className="allGames-info">
                 <img src={imageUrl} />
-                <h6>Location: {location}</h6>
-                <h2>Hotel: {name}</h2>
+                <h2>{name}</h2>
+                <h6>{location}</h6>                
                 <div>
-                    <p>Info: {summary}</p>
+                    <p>{summary}</p>
                     {/* <p>{description}</p>
                     <p>Facilities:{facilities}</p> */}
                 </div>
