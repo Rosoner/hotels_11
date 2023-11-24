@@ -1,6 +1,7 @@
 import * as request from "../lib/request";
 
-const baseUrl = 'http://localhost:3030/jsonstore/hotels'
+const baseUrl = 'http://localhost:3030/data/hotels'
+// const baseUrl = 'http://localhost:3030/jsonstore/hotels'
 
 export const getAll = async () => {
     const result = await request.get(baseUrl);
@@ -20,4 +21,9 @@ export const create = async (hotelData) => {
     return result;
 };
 
+// export const edit = async (hotelId, hotelData) => {
+//     const result = await request.put(`${baseUrl}/${hotelId}`, hotelData);
 
+//     return result;
+// };
+ 

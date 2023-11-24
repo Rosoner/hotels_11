@@ -1401,28 +1401,27 @@
     			_id: "0a272c58-b7ea-4e09-a000-7ec988248f66"
     		}
     	},
-
-        hotels: {
+    	hotels: {
     		"3564027f-adcd-4425-b2c0-1253d2386c0c": {
-                "name": "Hyatt",
-                "location": "Bulgaria, Sofia, Vasil Levski Square",
-                "description": "Hyatt Regency Sofia is located within the heart of the city on Vasil Levski Square. It is ideal for exploring and encountering a modern city surrounded by authentic Eastern European history. Set within walking distance of many of Sofia’s cultural institutions and tourist attractions, you are never far away from an unforgettable experience.",
-                "imageUrl": "https://gradat.bg/sites/default/files/styles/online_magazine__1920x1080/public/img_5490.jpg?itok=lGfPV0hR",
-                "summary": "Hyatt Regency Sofia is located within the heart of the city on Vasil Levski Square.",
-                "facilities": "Free parking, Free WiFi, Swimming Pool, Fitness Center, Room Service, On-Site Restaurant, Laundry",
-                "link": "https://www.hyatt.com/en-US/hotel/bulgaria/hyatt-regency-pravets-resort/sofrp?&src=bbm_sem_bbm_search_google_eame_rooms_brand_catchall_All_Hyatt_destination_Bulgaria_Pravets_hyatt%20pravets&mckv=s-dc_pcrid_663126375792_mtid_5297kx13790&gad_source=1&gclid=CjwKCAiA9dGqBhAqEiwAmRpTC4wSIxb4gK-PF9k6Kg9NfCrmUJVoM5-5dCEebErQyW4Fn2Lv-HhIoBoCBqEQAvD_BwE&gclsrc=aw.ds",
-                "_id": "3564027f-adcd-4425-b2c0-1253d2386c0c"
-            },
-            "3564027f-avcd-4425-b2c0-1253d238fc2c": {
-                "name": "Hilton",
-                "location": "Bulgaria, Sofia, 1, Bulgaria Blvd",
-                "description": "The Vitosha Mountain provides a dramatic backdrop to our central hotel, which is a 10-minute walk to the National Palace of Culture. Mall of Sofia, Boyana Church, Alexander Nevsky Cathedral, and Sofia International Airport are within a 15-minute drive. We offer bike rental, a spa, and a hair and beauty studio.",
-                "imageUrl": "https://www.hilton.com/im/en/SOFHIHI/756073/sofhi-exterior.jpg?impolicy=crop&cw=4976&ch=3320&gravity=NorthWest&xposition=7&yposition=0&rw=768&rh=512",
-                "summary": "The Vitosha Mountain provides a dramatic backdrop to our central hotel, which is a 10-minute walk to the National Palace of Culture.",
-                "facilities": "Free parking, Free WiFi, Room service, Fitness Center, Pet-friendly rooms, Business center, Non-smoking rooms",
-                "link": "https://www.hilton.com/en/hotels/sofhihi-hilton-sofia/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p7939523136&&&&&gad_source=1&gclid=Cj0KCQiAmNeqBhD4ARIsADsYfTdNE7dsuhnVqrEBYrnpTg2zbV6uZTw4F2AsB1qqLNJ-N27C4t0op08aAj6VEALw_wcB&gclsrc=aw.ds",
-                "_id": "3564027f-avcd-4425-b2c0-1253d238fc2c"
-            }
+    			name: "Hyatt",
+    			location: "Bulgaria, Sofia, Vasil Levski Square",
+    			description: "Hyatt Regency Sofia is located within the heart of the city on Vasil Levski Square. It is ideal for exploring and encountering a modern city surrounded by authentic Eastern European history. Set within walking distance of many of Sofia’s cultural institutions and tourist attractions, you are never far away from an unforgettable experience.",
+    			imageUrl: "https://gradat.bg/sites/default/files/styles/online_magazine__1920x1080/public/img_5490.jpg?itok=lGfPV0hR",
+    			summary: "Hyatt Regency Sofia is located within the heart of the city on Vasil Levski Square.",
+    			facilities: "Free parking, Free WiFi, Swimming Pool, Fitness Center, Room Service, On-Site Restaurant, Laundry",
+    			link: "https://www.hyatt.com/en-US/hotel/bulgaria/hyatt-regency-pravets-resort/sofrp?&src=bbm_sem_bbm_search_google_eame_rooms_brand_catchall_All_Hyatt_destination_Bulgaria_Pravets_hyatt%20pravets&mckv=s-dc_pcrid_663126375792_mtid_5297kx13790&gad_source=1&gclid=CjwKCAiA9dGqBhAqEiwAmRpTC4wSIxb4gK-PF9k6Kg9NfCrmUJVoM5-5dCEebErQyW4Fn2Lv-HhIoBoCBqEQAvD_BwE&gclsrc=aw.ds",
+    			_id: "3564027f-adcd-4425-b2c0-1253d2386c0c"
+    		},
+    		"3564027f-avcd-4425-b2c0-1253d238fc2c": {
+    			name: "Hilton",
+    			location: "Bulgaria, Sofia, 1, Bulgaria Blvd",
+    			description: "The Vitosha Mountain provides a dramatic backdrop to our central hotel, which is a 10-minute walk to the National Palace of Culture. Mall of Sofia, Boyana Church, Alexander Nevsky Cathedral, and Sofia International Airport are within a 15-minute drive. We offer bike rental, a spa, and a hair and beauty studio.",
+    			imageUrl: "https://www.hilton.com/im/en/SOFHIHI/756073/sofhi-exterior.jpg?impolicy=crop&cw=4976&ch=3320&gravity=NorthWest&xposition=7&yposition=0&rw=768&rh=512",
+    			summary: "The Vitosha Mountain provides a dramatic backdrop to our central hotel, which is a 10-minute walk to the National Palace of Culture.",
+    			facilities: "Free parking, Free WiFi, Room service, Fitness Center, Pet-friendly rooms, Business center, Non-smoking rooms",
+    			link: "https://www.hilton.com/en/hotels/sofhihi-hilton-sofia/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p7939523136&&&&&gad_source=1&gclid=Cj0KCQiAmNeqBhD4ARIsADsYfTdNE7dsuhnVqrEBYrnpTg2zbV6uZTw4F2AsB1qqLNJ-N27C4t0op08aAj6VEALw_wcB&gclsrc=aw.ds",
+    			_id: "3564027f-avcd-4425-b2c0-1253d238fc2c"
+    		}
     	},
     	records: {
     		i01: {
