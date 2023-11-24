@@ -14,6 +14,7 @@ import HotelCreate from './components/hotel-create/HotelCreate';
 import Login from './components/login/Login';
 import Logout from './components/logout/Logout';
 import Register from './components/register/Register';
+//import GameEdit from './components/game-edit/GameEdit';
 
 // import ControlledCarousel from './components/carosel/carocel.jsx';
 function App() { 
@@ -71,26 +72,6 @@ const navigate = useNavigate();
         email: auth.email,
         isAuthenticated: !!auth.accessToken,
     };
-
-
-
-
-  // return (
-  //   <>
-  //      <Header />
-  //       {/* <ControlledCarousel /> */}
-
-  //      <Routes>
-  //               <Route path="/" element={<Home />} />
-  //               <Route path="/hotels" element={<HotelList />} />
-  //               <Route path="/hotels/:hotelId" element={<HotelDetails /> } />
-  //               <Route path="/hotels/create" element={<HotelCreate />} />
-  //               <Route path="/login" element={<Login />} />
-  //       </Routes>
-
-  //       <Footer />
-  //   </>
-  // )
 
   return (
     <AuthContext.Provider value={values}>

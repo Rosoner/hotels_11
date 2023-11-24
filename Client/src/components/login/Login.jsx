@@ -33,7 +33,7 @@ export default function Login() {
                         type="email"
                         id="email"
                         name={LoginFormKyes.Email}
-                        placeholder="Sokka@gmail.com"
+                        placeholder="ivan@gmail.com"
                         onChange={onChange}
                         value={values[LoginFormKyes.Email]}
                     />
