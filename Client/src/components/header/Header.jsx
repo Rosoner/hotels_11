@@ -18,7 +18,7 @@ export default function Header() {
                     <div id="user">
                         <Link to="/hotels/create">New hotel</Link>
                         <Link to="/logout">Logout</Link>
-                        <span style={{ color: 'yellow'}}>| {username} |</span>
+                        <span style={{ color: 'yellow',}}>| Logged in: {username} |</span>
                     </div>
                 )}
 

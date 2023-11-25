@@ -9,10 +9,13 @@ import AuthContext from "../../contexts/authContext";
 
 
 export default function HotelDetails() {
-    const {username} = useContext(AuthContext);
+    const {username, userId} = useContext(AuthContext);
     const [hotel, setHotel] = useState({});
     const [comments, setComments] = useState([]);
     const { hotelId } = useParams();
+
+    // console.log(_id)
+    // console.log(hotel._ownerId)
 
     useEffect(() => {
         hotelService.getOne(hotelId)
@@ -70,11 +73,14 @@ export default function HotelDetails() {
                     )}
                 </div>
 
-                {/* <!-- Edit/Delete buttons ( Only for creator of this game )  -->
+                {userId === hotel._ownerId && (
                 <div className="buttons">
-                    <a href="#" className="button">Edit</a>
+                    <Link to={'/hotels/:hotelId/edit'} className="button">Edit</Link>
+                    {/* <a href="#" className="button">Edit</a> */}
                     <a href="#" className="button">Delete</a>
-                </div> */}
+                </div>
+                )}
+                
             </div>
 
             <article className="create-comment">

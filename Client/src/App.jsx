@@ -14,7 +14,7 @@ import HotelCreate from './components/hotel-create/HotelCreate';
 import Login from './components/login/Login';
 import Logout from './components/logout/Logout';
 import Register from './components/register/Register';
-//import GameEdit from './components/game-edit/GameEdit';
+import HotelEdit from './components/hotel-edit/HotelEdit';
 
 // import ControlledCarousel from './components/carosel/carocel.jsx';
 function App() { 
@@ -47,6 +47,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/hotels/:hotelId" element={<HotelDetails />} />
+                <Route path="/hotels/:hotelId/edit" element={<HotelEdit />} />
                 <Route path={Path.Logout} element={<Logout />} />
             </Routes>
         </div>

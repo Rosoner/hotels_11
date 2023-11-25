@@ -21,9 +21,9 @@ export const create = async (hotelData) => {
     return result;
 };
 
-// export const edit = async (hotelId, hotelData) => {
-//     const result = await request.put(`${baseUrl}/${hotelId}`, hotelData);
+export const edit = async (hotelId, hotelData) => {
+    const result = await request.put(`${baseUrl}/${hotelId}`, hotelData);
 
-//     return result;
-// };
+    return result;
+};
  
