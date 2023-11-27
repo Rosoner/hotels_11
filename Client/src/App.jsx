@@ -15,6 +15,9 @@ import Login from './components/login/Login';
 import Logout from './components/logout/Logout';
 import Register from './components/register/Register';
 import HotelEdit from './components/hotel-edit/HotelEdit';
+import MyAccount from "./components/info-user/MyAccount";
+import NotFound from './components/notFound/NotFound';
+
 
 // import ControlledCarousel from './components/carosel/carocel.jsx';
 function App() { 
@@ -43,12 +46,14 @@ function App() {
             <Routes>
                 <Route path={Path.Home} element={<Home />} />
                 <Route path={Path.Hotels} element={<HotelList />} />
-                <Route path="/hotels/create" element={<HotelCreate />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/hotels/:hotelId" element={<HotelDetails />} />
-                <Route path="/hotels/:hotelId/edit" element={<HotelEdit />} />
+                <Route path={Path.Create} element={<HotelCreate />} />
+                <Route path={Path.Login} element={<Login />} />
+                <Route path={Path.Register} element={<Register />} />
+                <Route path={Path.HotelDetails} element={<HotelDetails />} />
+                <Route path={Path.HotelEdit} element={<HotelEdit />} />
                 <Route path={Path.Logout} element={<Logout />} />
+                <Route path={Path.MyAccount} element={<MyAccount />} />
+                <Route path={Path.Page404} element={<NotFound />} />
             </Routes>
         </div>
         <Footer />

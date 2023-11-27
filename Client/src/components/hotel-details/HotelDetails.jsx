@@ -75,7 +75,7 @@ export default function HotelDetails() {
 
                 {userId === hotel._ownerId && (
                 <div className="buttons">
-                    <Link to={'/hotels/:hotelId/edit'} className="button">Edit</Link>
+                    <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
                     {/* <a href="#" className="button">Edit</a> */}
                     <a href="#" className="button">Delete</a>
                 </div>
