@@ -1,14 +1,13 @@
 const Path = {
     Home: '/',
+    Hotels: '/hotels', 
     Create:'/hotels/create',
+    HotelDetails: '/hotels/:hotelId', 
+    HotelEdit: '/hotels/:hotelId/edit',
     Login: '/login',
     Register: '/register',
-    Logout: '/logout',
-    Hotels: '/hotels',
-    GameEdit: '/hotels/:hotelId/edit',
-    MyAccount: '/myaccount',
-    HotelDetails: '/hotels/:hotelId',
-    HotelEdit: '/hotels/:hotelId/edit',
+    Logout: '/logout',     
+    MyAccount: '/myaccount',       
     Page404: '*',
 };
 

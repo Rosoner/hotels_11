@@ -47,6 +47,7 @@ export default function HotelEdit() {
         }
     }
 
+     
     const { values, onChange, onSubmit } = useForm(editHotelSubmitHandler, hotel);
 
 
