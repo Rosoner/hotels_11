@@ -58,16 +58,18 @@ export default function HotelDetails() {
                 <div className="game-header">
                     <img className="game-img" src={hotel.imageUrl} alt={hotel.name} />
                     <h1>{hotel.name}</h1>
-                    <h6>{hotel.location}</h6>
+                    <h5>{hotel.location}</h5>
+                    <span >
+                        <Link to={hotel.link} ><span style={{ color: 'darkblue', fontSize:12}}>Visit web site</span></Link>
+                    </span>  
                                     
                     <p className="type">{hotel.description}</p>
-
-                    
-                    <div className="levels">Facilities: {hotel.facilities}</div>
-                    <div >
-                    <Link to={hotel.link} className="details-button">hotel</Link>
-                    {/* <Link to={`/hotels/${_id}`} className="details-button">Details</Link */}
-                    </div>                    
+                                                           
+                    <div className="levels">
+                        <span style={{ color: 'darkred',}}> Facilities: </span>
+                        <span>{hotel.facilities}</span>
+                    </div>
+                                     
                 </div>
 
                 <div className="details-comments">
@@ -89,6 +91,7 @@ export default function HotelDetails() {
                 <div className="buttons">
                     <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
                     <button className="button" onClick={deleteButtonClickHandler}>Delete</button>
+                    {/* <button className="button" onClick={deleteButtonClickHandler}>Modal create</button> */}
                 </div>
                 )}
                 

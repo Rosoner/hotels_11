@@ -63,13 +63,19 @@
     color: #9f3232;
 }
 
+.allGames-info> div {
+    /* max-width: 300px; */
+    text-align:justify;
+    margin-right: 17%;
+}
+
 .details-button {
     background-color: #2A265F;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     font-size: 16px;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     text-align: left;
     letter-spacing: 1px;
     padding: 5px 10px;

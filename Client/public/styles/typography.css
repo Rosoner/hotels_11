@@ -41,8 +41,9 @@ li {
 }
 
 button {
-    font-weight: bold;
-    padding: 0.2em;
+    font-weight:bold;
+    /* padding: 0.2em; */
+    /* padding: 5px 10px; */
     margin: 0.2em;
     border: 1px solid white;
     border-radius: 0.3em;
@@ -112,3 +113,8 @@ blockquote>cite {
     background-image: url(../images/hotel_3.png);
   } */
 
+.game_header-info > h1 {
+    font-size: 20px;
+    font-weight: 750;
+    color: #9f3232;
+}

@@ -35,7 +35,7 @@
 }
 
 .game_header>h1 {
-    color: black;
+    color: rgb(206, 63, 63);
     margin-top: 5px;
     font-size: 36px;
     font-weight: 400;
@@ -115,11 +115,25 @@
 
 .button {
     height: 15%;
-    background-color: #54557b;
-    padding: 14px;
+    background-color: #2A265F;
+    padding: 5px 10px;
     margin-top: auto;
-    font-size: 21px;
+    font-size: 16px;
+    border-radius: 7px;
     color: rgb(255, 255, 255);
+
+    /* background-color: #2A265F;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    margin-top: auto;
+    margin-left: 20px;
+    border-radius: 7px; */
 }
 
 .button:hover {
