@@ -27,3 +27,4 @@ export const edit = async (hotelId, hotelData) => {
     return result;
 };
  
+export const remove = async (hotelId) => request.remove(`${baseUrl}/${hotelId}`);

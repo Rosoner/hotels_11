@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 
-import { Link } from "react-router-dom";
 import * as hotelService from '../../services/hotelService';
 import * as commentService from '../../services/commentService';
 import AuthContext from "../../contexts/authContext";
 
 
 export default function HotelDetails() {
+    const navigate = useNavigate();
     const {username, userId} = useContext(AuthContext);
     const [hotel, setHotel] = useState({});
     const [comments, setComments] = useState([]);
@@ -39,6 +39,16 @@ export default function HotelDetails() {
         newComment.owner = { username };
 
         setComments(state => [...state, { ...newComment, owner: { username } }]);
+    }
+
+    const deleteButtonClickHandler = async () => {
+        const hasConfirmed = confirm(`Are you sure you want to delete ${hotel.name}`);
+
+        if (hasConfirmed) {
+            await hotelService.remove(hotelId);
+
+            navigate('/hotels');
+        }
     }
 
     return (
@@ -77,7 +87,7 @@ export default function HotelDetails() {
                 <div className="buttons">
                     <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
                     {/* <a href="#" className="button">Edit</a> */}
-                    <a href="#" className="button">Delete</a>
+                    <button className="button" onClick={deleteButtonClickHandler}>Delete</button>
                 </div>
                 )}
                 
