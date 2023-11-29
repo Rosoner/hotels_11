@@ -9,7 +9,7 @@ import AuthContext from "../../contexts/authContext";
 
 export default function HotelDetails() {
     const navigate = useNavigate();
-    const {username, userId} = useContext(AuthContext);
+    const {username, userId, isAuthenticated} = useContext(AuthContext);
     const [hotel, setHotel] = useState({});
     const [comments, setComments] = useState([]);
     const { hotelId } = useParams();
@@ -61,6 +61,8 @@ export default function HotelDetails() {
                     <h6>{hotel.location}</h6>
                                     
                     <p className="type">{hotel.description}</p>
+
+                    
                     <div className="levels">Facilities: {hotel.facilities}</div>
                     <div >
                     <Link to={hotel.link} className="details-button">hotel</Link>
@@ -83,10 +85,9 @@ export default function HotelDetails() {
                     )}
                 </div>
 
-                {userId === hotel._ownerId && (
+                {userId === hotel._ownerId && isAuthenticated && (
                 <div className="buttons">
                     <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
-                    {/* <a href="#" className="button">Edit</a> */}
                     <button className="button" onClick={deleteButtonClickHandler}>Delete</button>
                 </div>
                 )}

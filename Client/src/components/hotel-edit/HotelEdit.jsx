@@ -1,45 +1,40 @@
 import { useNavigate, useParams } from 'react-router-dom';
 
 import * as hotelService from '../../services/hotelService';
-import useForm from '../../hooks/useForm';
+
 import { useEffect, useState } from 'react';
 
 export default function HotelEdit() {
     const navigate = useNavigate();
     const { hotelId } = useParams();
     const [hotel, setHotel] = useState({
-        // name: '',
-        // location: '',        
-        // description: '',
-        // imageUrl: '',
-        // summary: '',
-        // facilities: '',
-        // link: '',
-        // _id: '',
+        name: '',
+        location: '',        
+        description: '',
+        imageUrl: '',
+        summary: '',
+        facilities: '',
+        link: '',
+        _id: '',
     });
     
 
     useEffect(() => {
         hotelService.getOne(hotelId)
-            .then(result => {
-                setHotel(result);
-                console.log(result);
+        .then(result => {
+            setHotel(result);
             });
     }, [hotelId]);
 
-    // useEffect(() => {
-    //     hotelService.getOne(hotelId)
-    //         .then(setHotel);
 
-    // }, [hotelId]);
+    const editHotelSubmitHandler = async (e) => {
+        e.preventDefault();
 
+        const values = Object.fromEntries(new FormData(e.currentTarget));
 
-
-    const editHotelSubmitHandler = async (values) => {
         try {
             await hotelService.edit(hotelId, values);
-           // edit = async (hotelId, hotelData) 
-
+           
             navigate('/hotels');
         } catch (err) {
             // Error notification
@@ -47,21 +42,24 @@ export default function HotelEdit() {
         }
     }
 
-     
-    const { values, onChange, onSubmit } = useForm(editHotelSubmitHandler, hotel);
+    const onChange = (e) => {
+        setHotel(state => ({
+            ...state,
+            [e.target.name]: e.target.value
+        }));
+    };
 
-
-    // values or hotel?
+   
     return (
         <section id="edit-page" className="auth">
-            <form id="edit" onSubmit={onSubmit}>
+            <form id="edit" onSubmit={editHotelSubmitHandler}>
                 <div className="container">
                     <h1>Edit Hotel</h1>
                     <label htmlFor="name">Hotel:</label>
                     <input type="text" 
                         id="name" 
                         name="name" 
-                        value={values.name} 
+                        value={hotel.name} 
                         onChange={onChange} 
                         placeholder= "Enter hotel name" />
 
