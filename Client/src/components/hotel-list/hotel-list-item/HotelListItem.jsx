@@ -9,8 +9,8 @@ export default function HotelListItem({
 
 }) {
     return (
-        <div className="allGames">
-            <div className="allGames-info">
+        <div className="allHotels">
+            <div className="allHotels-info">
                 <img src={imageUrl} />
                 <h2>{name}</h2>
                 <h6>{location}</h6>                

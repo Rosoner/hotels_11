@@ -46,7 +46,7 @@ export default function Login() {
                         onChange={onChange}
                         value={values[LoginFormKyes.Password]}
                     />
-                    <input type="submit" className="btn submit" value="Login" />
+                    <input type="submit" id="btn-submit" value="Login" />
                     <p className="field">
                         <span>If you don't have profile click <a href="/register">here</a></span>
                     </p>

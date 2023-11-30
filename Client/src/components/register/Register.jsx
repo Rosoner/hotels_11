@@ -64,7 +64,7 @@ export default function Register() {
                         values={values[RegisterFormKeys.ConfirmPassword]}
                     />
 
-                    <input className="btn submit" type="submit" value="Register" />
+                    <input id="btn-submit" type="submit" value="Register" />
 
                     <p className="field">
                         <span>If you already have profile click <a href="#">here</a></span>

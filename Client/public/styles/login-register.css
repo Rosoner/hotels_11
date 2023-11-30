@@ -5,7 +5,7 @@
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background: #3e4443;
+    background: #657a8f;
     box-shadow: 0px 0px 32px 0px #49535e, -14px -14px 20px #191c21;
 }
 
@@ -16,7 +16,7 @@
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background: #3e4443;
+    background: #657a8f;
     box-shadow: 0px 0px 32px 0px #49535e, -14px -14px 20px #191c21;
 }
 
@@ -100,10 +100,10 @@ label[for="terms"]>input {
     height: 60px;
     border-radius: 20px;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     cursor: pointer;
-    font-weight: 900;
-    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    font-weight: 800;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px #514e4e;
     transition: 0.5s;
 }
 
@@ -127,4 +127,18 @@ label[for="terms"]>input {
     background: rgb(235, 157, 142);
     border-radius: 10px;
     padding: 5px;
+}
+
+#btn-submit{
+    width: 200px;   
+    margin-top: 30px;
+    background: rgb(78 138 155);
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px #514e4e;
+    transition: 0.5s;
 }

@@ -52,11 +52,11 @@ export default function HotelDetails() {
     }
 
     return (
-        <section id="game-details">
+        <section id="hotel-details">
             <h1>Hotel Details</h1>
             <div className="info-section">
-                <div className="game-header">
-                    <img className="game-img" src={hotel.imageUrl} alt={hotel.name} />
+                <div className="hotel-header">
+                    <img className="hotel-img" src={hotel.imageUrl} alt={hotel.name} />
                     <h1>{hotel.name}</h1>
                     <h5>{hotel.location}</h5>
                     <span >
@@ -73,7 +73,7 @@ export default function HotelDetails() {
                 </div>
 
                 <div className="details-comments">
-                    <h2>Comments:</h2>
+                    <div id='header-comment'>Comments:</div>
                     <ul>
                         {comments.map(({ _id, text, owner: { username } }) => (
                             <li key={_id} className="comment">
@@ -91,7 +91,7 @@ export default function HotelDetails() {
                 <div className="buttons">
                     <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
                     <button className="button" onClick={deleteButtonClickHandler}>Delete</button>
-                    {/* <button className="button" onClick={deleteButtonClickHandler}>Modal create</button> */}
+                    
                 </div>
                 )}
                 
@@ -101,7 +101,8 @@ export default function HotelDetails() {
                 <label>Add new comment:</label>
                 <form className="form" onSubmit={addCommentHandler}>
                     <textarea name="comment" placeholder="Comment......"></textarea>
-                    <input className="btn submit" type="submit" value="Add Comment" />
+                    <input id="btn-submit" type="submit" value="Add Comment" />
+                    {/* <input className="btn submit" type="submit" value="Add Comment" /> */}
                 </form>
             </article>
         </section>
